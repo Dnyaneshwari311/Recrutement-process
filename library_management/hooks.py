@@ -403,6 +403,7 @@ fixtures = [
             ["name", "=", "Standard"]
         ]
     },
+
     {
         "doctype": "Web Form",
         "filters": [
@@ -422,6 +423,4 @@ fixtures = [
         ]
     }
 
-    
-    
 ]
