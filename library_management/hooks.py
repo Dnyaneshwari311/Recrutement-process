@@ -403,6 +403,7 @@ fixtures = [
             ["name", "=", "Standard"]
         ]
     },
+
     {
         "doctype": "Web Form",
         "filters": [
@@ -421,5 +422,6 @@ fixtures = [
             ["dt", "=", "Job Applicant"]
         ]
     }
+
 
 ]
