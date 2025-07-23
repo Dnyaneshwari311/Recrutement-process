@@ -331,108 +331,6 @@ doc_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
  
-# fixtures=[
-#      "Library member",
-#  ]
-
-
-
-# fixtures = [
-#     {
-#         "doctype": "Custom Field",
-#         "filters": [
-#             ["dt", "=", "Job Applicant"]
-#         ]
-#     }
-# ]
-
-
-# fixtures = [
-#     {
-#         "doctype": "Custom Field",
-#         "filters": [
-#             ["dt", "in", ["Job Applicant", "Interview"]]
-#         ]
-#     }
-# ]
-
-# fixtures = [
-#     {
-#         "doctype": "Custom Field",
-#         "filters": [
-#             ["dt", "=", "Job Opening"]
-#         ]
-#     }
-# ]
-
-
-# fixtures = [
-#     {"doctype": "Custom Field", "filters": [["dt", "in", [
-#         "Job Opening", 
-#         "Interview"
-#     ]]]},
-#      {"doctype": "Interview Rounds"},
-#     {"doctype": "Job Opening custom doc"},
-#     {"doctype": "Job Title"}
-# ]
-
-
-# fixtures = [
-#     {
-#         "dt": "Web Page",
-#         "filters": [
-#             ["name", "in", [
-#                 "about-us",
-#                 "all-courses",
-#                 "contact",
-#                 "home",
-#                 "statistics",
-#                 "batches",
-#                 "courses",
-#                 "explore",
-#                 "job",
-#                 "career"
-#             ]]
-#         ]
-#     }
-# ]
-
-
-# fixtures = [
-#     {
-#         "dt": "Notification",
-#         "filters": [
-#             ["name", "in", [
-#                 "job offer accepted or rejected mail for applicant",
-#                 "Triger notification for interviewer",
-#                 "Email to the applicant automatically when an interview is scheduled",
-#                 "job application received mail to applicant"
-
-
-#             ]]
-#         ]
-#     }
-# ]
-
-
-
-# fixtures = [
-#     {
-#         "dt": "Website Settings"
-#     }
-# ]
-
-
-# fixtures = [
-#     {
-#         "doctype": "Custom Field",
-#         "filters": [
-#             ["dt", "=", "Job Opening"]
-#         ]
-#     }
-# ]
-
-
 
 fixtures = [
     # Custom Fields for multiple DocTypes
@@ -446,21 +344,24 @@ fixtures = [
             ]]
         ]
     },
-    
-    # Custom DocTypes
+
+    # All Custom DocTypes grouped
     {
-        "doctype": "Interview Rounds"
-    },
-    {
-        "doctype": "Job Opening custom doc"
-    },
-    {
-        "doctype": "Job Title"
+        "doctype": "DocType",
+        "filters": [
+            ["name", "in", [
+                "Interview Rounds",
+                "Job Opening custom doc",
+                "Job Title",
+                "Interview Skill Rating",
+                "Google meet oauth doc"
+            ]]
+        ]
     },
 
     # Web Pages
     {
-        "dt": "Web Page",
+        "doctype": "Web Page",
         "filters": [
             ["name", "in", [
                 "about-us",
@@ -479,7 +380,7 @@ fixtures = [
 
     # Notifications
     {
-        "dt": "Notification",
+        "doctype": "Notification",
         "filters": [
             ["name", "in", [
                 "job offer accepted or rejected mail for applicant",
@@ -492,6 +393,14 @@ fixtures = [
 
     # Website Settings
     {
-        "dt": "Website Settings"
+        "doctype": "Website Settings"
+    },
+
+    # Website Theme
+    {
+        "doctype": "Website Theme",
+        "filters": [
+            ["name", "=", "Standard"]
+        ]
     }
 ]
