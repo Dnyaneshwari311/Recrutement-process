@@ -414,6 +414,12 @@ fixtures = [
         "filters": [
             ["parent", "=", "job-application"]
         ]
+    },
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            ["dt", "=", "Job Applicant"]
+        ]
     }
 
 ]
