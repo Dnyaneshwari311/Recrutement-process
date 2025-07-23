@@ -340,7 +340,8 @@ fixtures = [
             ["dt", "in", [
                 "Job Applicant",
                 "Interview",
-                "Job Opening"
+                "Job Opening",
+                "job Applicant"
             ]]
         ]
     },
@@ -414,15 +415,6 @@ fixtures = [
         "filters": [
             ["parent", "=", "job-application"]
         ]
-    },
-    {
-        "doctype": "Custom Field",
-        "filters": [
-            ["dt", "=", "Job Applicant"]
-        ]
     }
-
-    
-
 
 ]
