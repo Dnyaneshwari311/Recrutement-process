@@ -123,18 +123,6 @@ app_license = "mit"
 
 # notification_config = "library_management.notifications.get_notification_config"
 
-override_whitelisted_methods = {
-    "frappe.desk.form.assigned_to.add": "library_management.overrides.custom_assigned.custom_assigned_to"
-    # "frappe.www.job_opening.get_list_context": "library_management.www.job_opening.get_list_context"
-   
-    }
-
-
-
-# override_doctype_class = {
-#      "Interview": "library_management.api.interview.get_rounds_by_applicant"
-#  }
-
 
 
 
@@ -152,10 +140,6 @@ doctype_js = {
     "Interview": "public/js/interview.js"
 }
 
-# doctype_js = {
-#      "Interview": "public/js/interview.js"
-#  }
-
 
 
 
@@ -168,20 +152,7 @@ has_permission = {
 }
 
 
-# doc_events = {
-#     "Job Offer": {
-#         "after_insert": "library_management.api.job_offer.send_offer_email_on_status",
-#         "on_update": "library_management.api.job_offer.send_offer_email_on_status"
-#     }
-# }
 
-
-
-doc_events = {
-    "Interview": {
-        "on_update": "library_management.api.interview.send_interview_pending_notification"
-    }
-}
 
 
 
@@ -223,16 +194,13 @@ doc_events = {
 # ---------------
 # Hook on document methods and events
 
-doc_events = {
+
 # 	"*": {
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
 # 	 }
-   "Article Library":{
-     "Validate":"library_management.utils.test_hook"
-   }
-}
+   
 
 # Scheduled Tasks
 # ---------------
@@ -340,8 +308,7 @@ fixtures = [
             ["dt", "in", [
                 "Job Applicant",
                 "Interview",
-                "Job Opening",
-                "job Applicant"
+                "Job Opening"
             ]]
         ]
     },
@@ -404,6 +371,8 @@ fixtures = [
             ["name", "=", "Standard"]
         ]
     },
+
+    # Web Form and fields for Job Applicant
     {
         "doctype": "Web Form",
         "filters": [
@@ -416,5 +385,4 @@ fixtures = [
             ["parent", "=", "job-application"]
         ]
     }
-
 ]
