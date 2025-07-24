@@ -373,12 +373,7 @@ fixtures = [
     },
 
     # Web Form and fields for Job Applicant
-    {
-        "doctype": "Web Form",
-        "filters": [
-            ["name", "=", "job-application"]
-        ]
-    },
+
     {
         "doctype": "Web Form Field",
         "filters": [
