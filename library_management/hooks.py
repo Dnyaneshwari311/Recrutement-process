@@ -143,13 +143,13 @@ doctype_js = {
 
 
 
-permission_query_conditions = {
-    "Interview": "library_management.library_management.doctype.interview.interview.get_permission_query_conditions"
-}
+# permission_query_conditions = {
+#     "Interview": "library_management.library_management.doctype.interview.interview.get_permission_query_conditions"
+# }
 
-has_permission = {
-    "Interview": "library_management.library_management.doctype.interview.interview.has_permission"
-}
+# has_permission = {
+#     "Interview": "library_management.library_management.doctype.interview.interview.has_permission"
+# }
 
 
 
