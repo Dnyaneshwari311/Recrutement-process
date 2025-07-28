@@ -375,13 +375,8 @@ fixtures = [
         "filters": [
             ["name", "=", "job-application"]
         ]
-    },
-    {
-        "doctype": "Web Form Field",
-        "filters": [
-            ["parent", "=", "job-application"]
-        ]
     }
+    
 
    
 ]
