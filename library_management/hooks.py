@@ -177,13 +177,6 @@ has_permission = {
 
 
 
-doc_events = {
-    "Interview": {
-        "on_update": "library_management.api.interview.send_interview_pending_notification"
-    }
-}
-
-
 
 
 
@@ -223,16 +216,13 @@ doc_events = {
 # ---------------
 # Hook on document methods and events
 
-doc_events = {
+
 # 	"*": {
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
 # 	 }
-   "Article Library":{
-     "Validate":"library_management.utils.test_hook"
-   }
-}
+   
 
 # Scheduled Tasks
 # ---------------
