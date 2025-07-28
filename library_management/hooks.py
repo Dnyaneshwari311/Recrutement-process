@@ -370,12 +370,7 @@ fixtures = [
             ["name", "=", "Standard"]
         ]
     },
-    {
-        "doctype": "Web Form",
-        "filters": [
-            ["name", "=", "job-application"]
-        ]
-    }
+   
     
 
    
