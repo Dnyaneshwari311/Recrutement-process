@@ -158,8 +158,6 @@ doctype_js = {
 
 
 
-
-
 # doc_events = {
 #     "Interview": {
 #         "validate": "library_management.library_management.doctype.interview.interview.validate"
@@ -308,7 +306,8 @@ fixtures = [
             ["dt", "in", [
                 "Job Applicant",
                 "Interview",
-                "Job Opening"
+                "Job Opening",
+                
             ]]
         ]
     },
