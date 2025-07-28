@@ -304,7 +304,7 @@ fixtures = [
         "doctype": "Custom Field",
         "filters": [
             ["dt", "in", [
-                "Job Applicant",
+                
                 "Interview",
                 "Job Opening",
                 
