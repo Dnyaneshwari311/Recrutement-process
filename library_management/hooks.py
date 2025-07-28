@@ -341,7 +341,7 @@ fixtures = [
                 "Job Applicant",
                 "Interview",
                 "Job Opening",
-                "job Applicant"
+                
             ]]
         ]
     },
