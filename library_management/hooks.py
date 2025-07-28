@@ -369,7 +369,7 @@ fixtures = [
         "filters": [
             ["name", "=", "Standard"]
         ]
-    },
+    }
    
     
 
