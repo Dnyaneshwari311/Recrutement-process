@@ -304,11 +304,18 @@ fixtures = [
         "doctype": "Custom Field",
         "filters": [
             ["dt", "in", [
-                
                 "Interview",
                 "Job Opening",
-                
+                "Job Applicant"  # ✅ Added this
             ]]
+        ]
+    },
+
+    # Property Setters for Job Applicant customizations
+    {
+        "doctype": "Property Setter",
+        "filters": [
+            ["doc_type", "=", "Job Applicant"]  # ✅ Added this
         ]
     },
 
@@ -370,8 +377,7 @@ fixtures = [
             ["name", "=", "Standard"]
         ]
     }
-   
-    
+]
 
    
-]
+
