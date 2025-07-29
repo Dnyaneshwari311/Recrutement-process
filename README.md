@@ -40,6 +40,5 @@ This app can use GitHub Actions for CI. The following workflows are configured:
 
 mit
 # Recruitement
-# Recruitement-model
 # Recrutement-process
-# Recruitement_employee
+
