@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Interview",
+  "enabled": 1,
+  "modified": "2025-07-02 13:06:57.386451",
+  "module": null,
+  "name": "google meet",
+  "script": "frappe.ui.form.on('Interview', {\n    refresh: function(frm) {\n        if (!frm.doc.custom_google_meet_link) {\n            frm.add_custom_button('Generate Google Meet', () => {\n                frappe.call({\n                    method: \"library_management.api.google_meet.generate_google_meet_link\",\n                    args: {\n                        docname: frm.doc.name\n                    },\n                    callback: function(r) {\n                        if (r.message) {\n                            frm.set_value('custom_google_meet_link', r.message);\n                            frm.save();\n                            frappe.msgprint('Google Meet link generated and saved.');\n                        }\n                    }\n                });\n            });\n        }\n    }\n});\n",
+  "view": "Form"
+ }
+]

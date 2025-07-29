@@ -376,6 +376,12 @@ fixtures = [
         "filters": [
             ["name", "=", "Standard"]
         ]
+    },
+    {
+        "doctype": "Client Script",
+        "filters": [
+            ["name", "=", "google meet"]
+        ]
     }
 ]
 
