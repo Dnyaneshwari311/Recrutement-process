@@ -1,39 +1,38 @@
-### Library Management
+# Library Management
 
-Library management app for feappe-bench
+Library management app for frappe-bench.  
+Designed for managing recruitment workflows including job applications, interviews, and more.
 
-### Installation
+---
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+##  Installation
+
+Follow the steps below to install the `library_management` app in your Frappe/ERPNext environment.
+
+###  Prerequisites
+- Python environment activated
+- Frappe version: v14+ or v15+
+- Install erpnext
+- Install Hrms 
+- A site already created (or use `bench new-site`)
+
+### 1. get the App
 
 ```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
-bench install-app library_management
-```
+cd ~/frappe-bench
+bench get-app https://github.com/Dnyaneshwari311/Recrutement-process.git
 
-### Contributing
+### 2. Install the App on Your Site
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+cd ~/frappe-bench
+bench --site your-site-name install-app library_management
 
-```bash
-cd apps/library_management
-pre-commit install
-```
+### 3. Apply Migrations
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+bench --site your-site-name migrate
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### CI
-
-This app can use GitHub Actions for CI. The following workflows are configured:
-
-- CI: Installs this app and runs unit tests on every push to `develop` branch.
-- Linters: Runs [Frappe Semgrep Rules](https://github.com/frappe/semgrep-rules) and [pip-audit](https://pypi.org/project/pip-audit/) on every pull request.
+### 4.Start bench
+bench start
 
 
 ### License
